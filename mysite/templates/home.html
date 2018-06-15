@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome, {{ user.get_full_name }} <small>{{ user.username }}</small>!</h2>
+  <p>Thanks for confirming your email address!</p>
+  <h3>{{user.profile.dob}}</h3>
+
+
+  <a href="{% url 'admin' %}">Admin Login</a>
+{% endblock %}
